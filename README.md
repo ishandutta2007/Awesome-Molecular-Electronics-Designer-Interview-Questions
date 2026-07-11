@@ -1,6 +1,10 @@
-# Molecular Electronics Designer Interview Questions ⚛️🔌
+# ⚛️🔌 Molecular Electronics Designer Interview Questions 🔌⚛️
 
-A curated, community-driven collection of interview questions (with model answers, frameworks, and explanations) for roles working on **molecular electronics** — using individual molecules or molecular-scale assemblies as functional electronic components (wires, switches, diodes, memory elements), spanning academic research groups, nanoelectronics labs, and materials/semiconductor companies exploring beyond-CMOS device concepts.
+<p align="center">
+  <img src="assets/banner.svg" alt="Molecular Electronics Banner" width="100%" />
+</p>
+
+A curated, community-driven collection of interview questions (with model answers, frameworks, and explanations) for roles working on **molecular electronics** 🧪 — using individual molecules or molecular-scale assemblies as functional electronic components ⚡ (wires, switches, diodes, memory elements), spanning academic research groups 🏫, nanoelectronics labs 🔬, and materials/semiconductor companies 🏭 exploring beyond-CMOS device concepts.
 
 > 📝 **A note on the title:** "Molecular Electronics Designer" isn't a standardized industry job title. Titles you're more likely to actually see for this work include "Molecular Electronics Researcher," "Nanoelectronics Scientist," or "Device Physicist" with a molecular/organic electronics focus. This repo covers the underlying discipline regardless of which specific title a given employer uses.
 

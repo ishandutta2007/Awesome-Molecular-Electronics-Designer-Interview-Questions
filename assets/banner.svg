@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1A1A2E" />
+            <stop offset="50%" stop-color="#16213E" />
+            <stop offset="100%" stop-color="#0F3460" />
+        </linearGradient>
+        
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <path id="orbit1" d="M 900, 150 a 80, 25 0 1,0 160,0 a 80, 25 0 1,0 -160,0" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
+        <path id="orbit2" d="M 900, 150 a 80, 25 0 1,0 160,0 a 80, 25 0 1,0 -160,0" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" transform="rotate(60, 980, 150)" />
+        <path id="orbit3" d="M 900, 150 a 80, 25 0 1,0 160,0 a 80, 25 0 1,0 -160,0" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2" transform="rotate(120, 980, 150)" />
+    </defs>
+    
+    <rect width="1200" height="300" fill="url(#bg)" rx="15" ry="15"/>
+    
+    <!-- Text Elements -->
+    <text x="80" y="140" font-family="'Inter', 'Segoe UI', sans-serif" font-size="44" font-weight="bold" fill="#E94560">
+        Molecular Electronics Designer
+    </text>
+    <text x="80" y="200" font-family="'Inter', 'Segoe UI', sans-serif" font-size="28" font-weight="300" fill="#EAEAEA">
+        Interview Questions &amp; Answers
+    </text>
+
+    <!-- Dynamic Atom Graphic -->
+    <g>
+        <!-- Nucleus -->
+        <circle cx="980" cy="150" r="10" fill="#E94560" filter="url(#glow)"/>
+        
+        <!-- Orbits -->
+        <use href="#orbit1" />
+        <use href="#orbit2" />
+        <use href="#orbit3" />
+        
+        <!-- Electrons -->
+        <circle r="6" fill="#00FFCC" filter="url(#glow)">
+            <animateMotion dur="4s" repeatCount="indefinite">
+                <mpath href="#orbit1"/>
+            </animateMotion>
+        </circle>
+        
+        <circle r="6" fill="#00FFCC" filter="url(#glow)">
+            <animateMotion dur="5s" repeatCount="indefinite">
+                <mpath href="#orbit2"/>
+            </animateMotion>
+        </circle>
+        
+        <circle r="6" fill="#00FFCC" filter="url(#glow)">
+            <animateMotion dur="6s" repeatCount="indefinite">
+                <mpath href="#orbit3"/>
+            </animateMotion>
+        </circle>
+    </g>
+</svg>
